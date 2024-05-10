@@ -16,7 +16,7 @@ productRouter.route("/").get((req,res) => {
 
 
 productRouter.route("/1").get((req,res) => {
-    res.render("index-products")
+    res.render("index-Product")
 })
 
 
