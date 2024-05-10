@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const path = require("path");
 const nodemon = require('nodemon');
 const productRouter = express.Router();
+const products = require('./data/products.json')
 
 const app = express();
 const port = process.env.port || 5000;
@@ -17,11 +18,7 @@ productRouter.route("/").get((req,res) => {
 
 productRouter.route("/1").get((req,res) => {
     res.render("index-Product",{
-        products:[
-            {productTitle: "AAA" , productDescription: "ถ่าน 3 A" ,productPrice: " 59"},
-            {productTitle: "AA" , productDescription: "ถ่าน 2 A" ,productPrice: " 69"},
-            {productTitle: "AAAAA" , productDescription: "ถ่าน 5 A" ,productPrice: " 98"},
-        ],
+        products,
     });
 });
 

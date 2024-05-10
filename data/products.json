@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "productTitle": "AAA",
+            "productDescription": "ถ่าน 3 A",
+            "productPrice": " 59"
+        },
+        {
+            "productTitle": "AA",
+            "productDescription": "ถ่าน 2 A",
+            "productPrice": " 69"
+        },
+        {
+            "productTitle": "AAAAA",
+            "productDescription": "ถ่าน 5 A",
+            "productPrice": " 98"
+        }
+    ]
+}
