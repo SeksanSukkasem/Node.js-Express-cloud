@@ -16,7 +16,7 @@ productRouter.route("/").get((req,res) => {
 
 
 productRouter.route("/1").get((req,res) => {
-    res.send("Hello Product 1 ");
+    res.render("products")
 })
 
 
