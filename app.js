@@ -11,7 +11,7 @@ const port = process.env.port || 5000;
 
 app.use(morgan('combined'));
 
-productRouter.route("/").get((req,res) => {
+productRouter.route("/1").get((req,res) => {
     res.render("index-Product",products
     );
 });
