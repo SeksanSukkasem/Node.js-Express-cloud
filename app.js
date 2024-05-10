@@ -10,7 +10,7 @@ const port = process.env.port || 5000;
 
 app.use(morgan('combined'));
 
-// app.use(express.static(path.join(__dirname,"./public/")))
+app.use(express.static(path.join(__dirname,"./public/")))
 app.set("views","./src/views");
 app.set("view engine","ejs");
 
