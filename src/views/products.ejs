@@ -6,7 +6,7 @@
 <body>
 
 
-  <h1>hello price </h1>
+  <h1>Products</h1>
   <% products.map((products)=>{%>
     <h4>
       <a href="/products/<%=products.id%>""><%=products.productTitle%></a>
@@ -17,7 +17,7 @@
     </p>
 
     <p>
-      <%=products.productPrice%>
+      <p>ราคา : <%=products.productPrice%> บาท</p>
     </p>
     <%})%>
 
