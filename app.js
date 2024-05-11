@@ -14,7 +14,7 @@ app.use(morgan('combined'));
 
 app.use('/products', productRouter);
 
-productRouter.route("/1").get((req,res) => {
+productRouter.route("/").get((req,res) => {
     res.render("index-Product",products
     );
 });
